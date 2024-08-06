@@ -1,0 +1,57 @@
+/* F
+FONT REFERENCE
+<==================================================================>
+sans-serif used as fallback font, incase Rubik doesn't load
+400 corresponds to Regular.
+500 corresponds to Medium.
+600 corresponds to SemiBold.
+700 corresponds to Bold.
+<==================================================================>
+*/
+
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+#navbar {
+    padding: 2% 3%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    font-size: 1.6em;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: lightgray;
+    margin-right: 5%; 
+}
+
+#navbar a#selectedTab {
+    font-size: 2.4em;
+    font-weight: 500;
+    color: black;
+}
+
+#navbar a:not(#selectedTab):hover{
+    color:black;
+    animation-name: clickLink;
+    animation-duration: 0.25s;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+
+@keyframes clickLink{
+    from {font-size: 1.6em;}
+    to {font-size: 2.0em; font-weight: 500;}
+}
+
+
